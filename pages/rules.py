@@ -39,12 +39,12 @@ st.markdown('''
     rule.  
     1.2 -  Generally, priority is given to those that benefit the most from the Oasis. As an example, here is a typical 
     priority list on oasis priorities.  
-        a.) 15c Capital Treasury  
-        b.) 15c Capital  
-        c.) 9c Capital Treasury  
-        d.) 9c Capital  
-        e.) 7c Capital Treasury  
-        f.) 7c Capital  
-        g.) 6c Capital  
+        - 15c Capital Treasury  
+        - 15c Capital  
+        - 9c Capital Treasury  
+        - 9c Capital  
+        - 7c Capital Treasury  
+        - 7c Capital  
+        - 6c Capital  
 '''
 )
