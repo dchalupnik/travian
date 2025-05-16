@@ -7,7 +7,7 @@ st.subheader("1. General rules")
 st.markdown('''
     1.1 - Everybody needs to be in secret society and on GT. Discord is optional.     
     1.2 - There is troop requirement 100% troops to population for romans 60%.  
-    1.3 - Play fair. Bots and any scripts are dissalowed.  
+    1.3 - Play fair. Bots and any scripts are disallowed.  
 '''
 )
 
@@ -38,7 +38,7 @@ st.markdown('''
     1.1 - *The max number of units in oasis is 250*. Only Cropper Capitals and Treasuries can be excluded from this 
     rule.  
     1.2 -  Generally, priority is given to those that benefit the most from the Oasis. As an example, here is a typical 
-    priority list on oasis priorities.  
+    priority list on oasis priorities:  
         - 15c Capital Treasury  
         - 15c Capital  
         - 9c Capital Treasury  
