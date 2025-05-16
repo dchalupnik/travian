@@ -14,7 +14,7 @@ st.markdown('''
 st.subheader("2. Settling During the Game")
 st.markdown('''
     2.1 - *Governors need to settle new villages inside the kingdom borders*.
-          The only exception are capitols - croppers (9c and 15c or 7cc/6cc with great oasis crop bonus).  
+          The only exception are capitols - croppers (9c and 15c or 7cc/6cc with great oasis crop bonus).
           Borders ar marked with blue spots. You can settle on them.  
     2.2 - Reserving a new settling location can only be done when *settlers have been trained and you have enough CP*.  
     2.3 - Governors must not settle on locations reserved for robber camps or treasuries, which will be marked
@@ -28,7 +28,7 @@ st.markdown('''
     3.1 - *Each player can attack up to 2 robber camps.*       
     3.2 - Two hours after the spawning of camps, you are allow to 2 more camps if any are still there.  
     3.3 - The last player to send to a camp must mark it as 'Full' on the map for the rest of the kingdom to see.
-    3.4 - Player that sent attack on camp should wrote on camps thread. Kingdom attacks are not visible on phone.  
+    3.4 - Player that sent attack on camp should wrote on camps thread. Kingdom attacks are not visible on phone.    
     3.5 - Only normal attacks are allowed. 
 '''
 )
