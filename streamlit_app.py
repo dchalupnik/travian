@@ -1,4 +1,7 @@
-import streamlit
+import streamlit as st
 
 
-streamlit.title('Moltress')
+st.title('Moltress')
+
+pg = st.navigation(["pages/rules.py", "pages/op.py"])
+pg.run()
