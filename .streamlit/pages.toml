@@ -1,0 +1,9 @@
+[[pages]]
+path = "pages/rules.py"
+name = "Rules"
+icon = "🏠"
+
+[[pages]]
+path = "pages/op.py"
+name = "Op"
+icon = ":crossed_swords:"
