@@ -1,5 +1,5 @@
 [[pages]]
-path = "pages/rulesa.py"
+path = "pages/rules.py"
 name = "Rules"
 icon = ":black_nib:"
 
