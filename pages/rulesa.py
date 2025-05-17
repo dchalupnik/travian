@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-st.markdown("**1. :exclamation:General rules**")
+st.markdown("**1. :exclamation: General rules**")
 st.markdown('''
     1.1 - Everybody needs to be in secret society and on GT. Discord is optional.     
     1.2 - There is troop requirement 100% troops to population for romans 60%.  
@@ -9,7 +9,7 @@ st.markdown('''
 '''
 )
 
-st.markdown("**2. :house_buildings:Settling During the Game**")
+st.markdown("**2. :house_buildings: Settling During the Game**")
 st.markdown('''
     2.1 - **Governors need to settle new villages inside the kingdom borders**.
           The only exception are capitols - croppers (9c and 15c or 7cc/6cc with great oasis crop bonus).
@@ -21,7 +21,7 @@ st.markdown('''
     2.5 - There is possibility to reserve village to chief. Inactive players and non kingdom members allowed.    
 ''')
 
-st.markdown("**3. :pirate_flag:Robber Camps**")
+st.markdown("**3. :pirate_flag: Robber Camps**")
 st.markdown('''
     3.1 - **Each player can attack up to 2 robber camps.**       
     3.2 - Two hours after the spawning of camps, you are allow to 2 more camps if any are still there.  
@@ -31,7 +31,7 @@ st.markdown('''
 '''
 )
 
-st.markdown("**4. :desert_island:Oasis Rules**")
+st.markdown("**4. :desert_island: Oasis Rules**")
 st.markdown('''
     1.1 - **The max number of units in oasis is 250**. Only Cropper Capitals and Treasuries can be excluded from this 
     rule.  
@@ -40,5 +40,3 @@ st.markdown('''
     15c Capital Treasury > 15c Capital > 9c Capital Treasury > 9c Capital > 7c Capital Treasury > 7c Capital > 6c Capital  
 '''
 )
-
-FAQ
