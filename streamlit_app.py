@@ -16,5 +16,5 @@ pg = st.navigation(nav)
 add_page_title(pg)
 #
 # pg.run()
-# pg = st.navigation(["pages/rules.py", "pages/op.py"])
+# pg = st.navigation(["pages/rulesa.py", "pages/op.py"])
 pg.run()
