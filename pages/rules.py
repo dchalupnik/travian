@@ -1,7 +1,5 @@
 import streamlit as st
 
-st.title("Moltress - Rules[Draft]")
-
 
 st.markdown("**1. :exclamation:General rules**")
 st.markdown('''
