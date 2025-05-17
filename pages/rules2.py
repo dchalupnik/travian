@@ -40,3 +40,15 @@ st.markdown('''
     15c Capital Treasury > 15c Capital > 9c Capital Treasury > 9c Capital > 7c Capital Treasury > 7c Capital > 6c Capital  
 '''
 )
+
+st.subheader("FAQ", divider=True)
+with st.expander("What if I break a rule?"):
+    st.write('''
+        Depends what you will do. We all do mistakes. First time you will get warning or penalty.
+        If you will repeat there might be kick. 
+        Rules serves everyone. We want to spent nice time in game and win.
+    ''')
+with st.expander("Where I can find GT url"):
+    st.write('''
+        Join link is attached to rules. Click GT in first rule. The same for discord.
+    ''')
