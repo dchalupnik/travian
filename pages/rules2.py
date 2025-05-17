@@ -3,7 +3,7 @@ import streamlit as st
 
 st.markdown("**1. :exclamation: General rules**")
 st.markdown('''
-    1.1 - Everybody needs to be in secret society and on GT. Discord is optional.     
+    1.1 - Everybody needs to be in secret society and on [GT](https://www.gettertools.com/com3.kingdoms.com.17/Truppentool/Join/mLN7TChe). Discord is optional.     
     1.2 - There is troop requirement 100% troops to population for romans 60%.  
     1.3 - Play fair. Bots and any scripts are disallowed.  
 '''
