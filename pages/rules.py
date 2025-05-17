@@ -42,3 +42,5 @@ st.markdown('''
     15c Capital Treasury > 15c Capital > 9c Capital Treasury > 9c Capital > 7c Capital Treasury > 7c Capital > 6c Capital  
 '''
 )
+
+FAQ
