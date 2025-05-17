@@ -46,9 +46,20 @@ with st.expander("What if I break a rule?"):
     st.write('''
         Depends what you will do. We all do mistakes. First time you will get warning or penalty.
         If you will repeat there might be kick. 
-        Rules serves everyone. We want to spent nice time in game and win.
+        Rules serves everyone. To win game and spent nice time we need to respect them
     ''')
-with st.expander("Where I can find GT url"):
+with st.expander("Are there any exceptions to rules?"):
+    st.write('''
+        When player come to leadership with good reason to make exception for him we can bend some of rules a bit. 
+        For example if there is red spot for robbers and it would be good for player we could try to move it if possible.
+        Better ask first before breaking a rule.
+    ''')
+with st.expander("Where I can find GT url?"):
     st.write('''
         Join link is attached to rules. Click GT in first rule. The same for discord.
     ''')
+with st.expander("Why do i need so many troops?"):
+    st.write('''
+        Travian is war game, to win and protect each other we need strong army. Population do not win wars.
+    ''')
+
