@@ -4,7 +4,7 @@ name = "Rules"
 icon = ":black_nib:"
 
 [[pages]]
-path = "pages/rules.py"
+path = "pages/info.py"
 name = "Information"
 icon = ":bulb:"
 
