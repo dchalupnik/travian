@@ -4,6 +4,11 @@ name = "Rules"
 icon = ":black_nib:"
 
 [[pages]]
+path = "pages/rules.py"
+name = "Information"
+icon = ":bulb:"
+
+[[pages]]
 path = "pages/op.py"
 name = "Op"
 icon = ":crossed_swords:"
