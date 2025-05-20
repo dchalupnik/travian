@@ -49,17 +49,17 @@ username = st.text_input(
     "nick",
     key="username",
 )
-if st.button("Submit"):
-    with Session(engine) as session:
-        new_entry = RulesRead(username=username, date=str(date.today()))
-        rule_object = session.query(RulesRead).where(RulesRead.username == new_entry.username)
-        if rule_object.first() is None:
-            session.add(new_entry)
-        else:
-            rule_object.update(new_entry)
-        session.commit()
+with Session(engine) as session:
+    if st.button("Submit"):
+            new_entry = RulesRead(username=username, date=str(date.today()))
+            rule_object = session.query(RulesRead).where(RulesRead.username == new_entry.username)
+            if rule_object.first() is None:
+                session.add(new_entry)
+            else:
+                rule_object.update(new_entry)
+            session.commit()
 
-st.text(','.join([f'{it.username} - {it.date}' for it in session.query(RulesRead).all()]))
+    st.text(','.join([f'{it.username} - {it.date}' for it in session.query(RulesRead).all()]))
 
 st.subheader("FAQ", divider=True)
 with st.expander("What if I break a rule?"):
