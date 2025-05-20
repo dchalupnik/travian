@@ -1,6 +1,7 @@
 import streamlit as st
+from models import get_session, RulesRead
 
-
+session = get_session()
 st.markdown("**1. :exclamation: General rules**")
 st.markdown('''
     1.1 - Everybody needs to be in secret society and on [GT](https://www.gettertools.com/com3.kingdoms.com.17/Truppentool/Join/mLN7TChe). Discord is optional.     
@@ -40,6 +41,21 @@ st.markdown('''
     15c Capital Treasury > 15c Capital > 9c Capital Treasury > 9c Capital > 7c Capital Treasury > 7c Capital > 6c Capital  
 '''
 )
+
+username = st.text_input(
+    "Placeholder for the other text input widget",
+    "Your travian nick",
+    key="username",
+)
+if st.button("Submit"):
+    new_entry = RulesRead(id=username)
+    rule_object = session.query(RulesRead).where(RulesRead.toner_id == new_entry.toner_id)
+    if rule_object.first() is None:
+        session.add(new_entry)
+    else:
+        rule_object.update(new_entry)
+    session.commit()
+
 
 st.subheader("FAQ", divider=True)
 with st.expander("What if I break a rule?"):
