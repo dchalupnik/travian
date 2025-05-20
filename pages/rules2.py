@@ -45,8 +45,8 @@ st.markdown('''
 )
 
 username = st.text_input(
-    "Placeholder for the other text input widget",
-    "Your travian nick",
+    "Enter your travian nick and click Submit to confirm that you read rules",
+    "nick",
     key="username",
 )
 if st.button("Submit"):
@@ -59,6 +59,7 @@ if st.button("Submit"):
             rule_object.update(new_entry)
         session.commit()
 
+st.text(','.join([f'{it.username} - {it.date}' for it in session.query(RulesRead).all()]))
 
 st.subheader("FAQ", divider=True)
 with st.expander("What if I break a rule?"):
