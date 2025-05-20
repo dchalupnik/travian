@@ -1,30 +1,18 @@
-from datetime import date
-from typing import Optional
+from sqlalchemy import Column, String, create_engine
+from sqlalchemy.orm import declarative_base
 
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-from sqlalchemy.orm import Mapped
-from sqlalchemy.orm import mapped_column
-from sqlalchemy.orm import DeclarativeBase
-
-
+Base = declarative_base()
 engine = create_engine(
     "sqlite:///moltress.db"
 )
 
-class Base(DeclarativeBase):
-    pass
 
-class RulesRead(DeclarativeBase):
+class RulesRead(Base):
     __tablename__ = "rules_read"
 
-    id: Mapped[str] = mapped_column(primary_key=True)
-    date: Mapped[Optional[date]]
-
-DeclarativeBase.metadata.tables['rules_read']
+    username = Column(String, primary_key=True)
+    date = Column(String)
 
 
-def get_session():
-    Session = sessionmaker(bind=engine)
-    return Session()
+Base.metadata.create_all(engine)
 

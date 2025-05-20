@@ -1,7 +1,9 @@
-import streamlit as st
-from models import get_session, RulesRead
+from datetime import date
 
-session = get_session()
+import streamlit as st
+from sqlalchemy.orm import Session
+from models import engine, RulesRead
+
 st.markdown("**1. :exclamation: General rules**")
 st.markdown('''
     1.1 - Everybody needs to be in secret society and on [GT](https://www.gettertools.com/com3.kingdoms.com.17/Truppentool/Join/mLN7TChe). Discord is optional.     
@@ -48,13 +50,14 @@ username = st.text_input(
     key="username",
 )
 if st.button("Submit"):
-    new_entry = RulesRead(id=username)
-    rule_object = session.query(RulesRead).where(RulesRead.toner_id == new_entry.toner_id)
-    if rule_object.first() is None:
-        session.add(new_entry)
-    else:
-        rule_object.update(new_entry)
-    session.commit()
+    with Session(engine) as session:
+        new_entry = RulesRead(username=username, date=str(date.today()))
+        rule_object = session.query(RulesRead).where(RulesRead.username == new_entry.username)
+        if rule_object.first() is None:
+            session.add(new_entry)
+        else:
+            rule_object.update(new_entry)
+        session.commit()
 
 
 st.subheader("FAQ", divider=True)
