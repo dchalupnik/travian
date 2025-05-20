@@ -46,7 +46,7 @@ st.markdown('''
 
 username = st.text_input(
     "Enter your travian nick and click Submit to confirm that you read rules",
-    "nick",
+    "",
     key="username",
 )
 with Session(engine) as session:
@@ -59,6 +59,7 @@ with Session(engine) as session:
                 rule_object.update(new_entry)
             session.commit()
 
+with Session(engine) as session:
     st.text(','.join([f'{it.username} - {it.date}' for it in session.query(RulesRead).all()]))
 
 st.subheader("FAQ", divider=True)
